@@ -71,21 +71,33 @@ function evaluateFunction() {
 
     if (outputString.includes("+")) {
         let total = parseFloat(secondaryValue) + parseFloat(initialNumber)
+        inputString = total.toString()
+        outputString = ""
+        initialNumber = total.toString()
         inputNums.innerHTML = total.toString()
     }
 
     if (outputString.includes("-")) {
         let total = parseFloat(secondaryValue) - parseFloat(initialNumber)
+        inputString = total.toString()
+        outputString = ""
+        initialNumber = total.toString()
         inputNums.innerHTML = total.toString()
     }
 
     if (outputString.includes("÷")) {
         let total = parseFloat(secondaryValue) / parseFloat(initialNumber)
+        inputString = total.toString()
+        outputString = ""
+        initialNumber = total.toString()
         inputNums.innerHTML = total.toString()
     }
 
     if (outputString.includes("*")) {
         let total = parseFloat(secondaryValue) * parseFloat(initialNumber)
+        inputString = total.toString()
+        outputString = ""
+        initialNumber = total.toString()
         inputNums.innerHTML = total.toString()
     }
 }
